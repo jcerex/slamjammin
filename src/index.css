@@ -1,0 +1,206 @@
+body {
+  /*margin-top: 100px;*/
+  /*background-color: black;*/
+}
+
+.root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  /*margin-bottom: 100px;*/
+  /*padding-left: 20px;*/
+}
+
+.btn-about {
+  color: #333333;
+  cursor: pointer;
+  line-height: 2.5;
+}
+
+.btn-close {
+  margin-left: 30px;
+  color: #6E6E6E;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-close:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+.about-container {
+  padding: 20px;
+  background-color: #EEF1F6;
+}
+
+.main-img {
+  width: 300px;
+  margin-top: 40px;
+}
+
+.AudioRecorder-button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.AudioRecorder-button:focus,
+.AudioRecorder-button:active:focus,
+.AudioRecorder-button.active:focus,
+.AudioRecorder-button.focus,
+.AudioRecorder-button:active.focus,
+.AudioRecorder-button.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+.AudioRecorder-button:hover,
+.AudioRecorder-button:focus,
+.AudioRecorder-button.focus {
+  color: #333;
+  text-decoration: none;
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.AudioRecorder-button:active,
+.AudioRecorder-button.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+
+.AudioRecorder-button {
+  /*width: 70px;*/
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  /*border-radius: 35px;*/
+  border-bottom: 5px solid #c9302c;
+}
+
+.AudioRecorder-remove, .AudioRecorder-download {
+  display: none;
+}
+
+.hasAudio {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.hasAudio:focus,
+.hasAudio.focus {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #255625;
+}
+.hasAudio:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.hasAudio:active,
+.hasAudio.active,
+.open > .dropdown-toggle.hasAudio {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.hasAudio:active:hover,
+.hasAudio.active:hover,
+.open > .dropdown-toggle.hasAudio:hover,
+.hasAudio:active:focus,
+.hasAudio.active:focus,
+.open > .dropdown-toggle.hasAudio:focus,
+.hasAudio:active.focus,
+.hasAudio.active.focus,
+.open > .dropdown-toggle.hasAudio.focus {
+  color: #fff;
+  background-color: #398439;
+  border-color: #255625;
+}
+.hasAudio:active,
+.hasAudio.active,
+.open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+
+.btn-reset {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  margin-left: 5px;
+  padding: 16px;
+}
+.btn-reset:focus,
+.btn-reset.focus {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #985f0d;
+}
+.btn-reset:hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.btn-reset:active,
+.btn-reset.active,
+.open > .dropdown-toggle.btn-reset {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.btn-reset:active:hover,
+.btn-reset.active:hover,
+.open > .dropdown-toggle.btn-reset:hover,
+.btn-reset:active:focus,
+.btn-reset.active:focus,
+.open > .dropdown-toggle.btn-reset:focus,
+.btn-reset:active.focus,
+.btn-reset.active.focus,
+.open > .dropdown-toggle.btn-reset.focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+.btn-reset:active,
+.btn-reset.active,
+.open > .dropdown-toggle.btn-reset {
+  background-image: none;
+}
