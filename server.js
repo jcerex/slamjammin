@@ -1,10 +1,11 @@
-import express from 'express';
-import React from 'react';
+const express = require('express');
+const React = require('react');
 console.log("1");
-import { renderToString } from 'react-dom/server';
-import renderFullHTMLPage from '../renderFullHTMLPage';
-import App from '../src/App';
-import path from 'path';
+const { renderToString } = require('react-dom/server');
+// const renderFullHTMLPage = require('../renderFullHTMLPage');
+const App = require('./src/App');
+const Index = require('./src/index.js');
+const path = require('path');
 
 const server = express();
 console.log("Server started");
@@ -17,13 +18,13 @@ server.use(express.static(path.join(__dirname, '../')));
 server.get('/favicon.ico', (req, res) => res.send(''));
 console.log("App loaded");
 
-server.get('/', async (req, res) => {
+server.get('/', (req, res) => {
   console.log("/ Route hit");
   try {
 
-    const intialHTML = renderToString(<App />);
-
-    res.send(renderFullHTMLPage(intialHTML));
+    const intialHTML = renderToString(Index);
+    // res.send(renderFullHTMLPage(intialHTML));
+    res.send(intialHTML);
   } catch (err) {
     /* eslint-disable */
     console.error('error', err);

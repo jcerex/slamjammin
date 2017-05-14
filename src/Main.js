@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import AudioRecorder from './Recorder/AudioRecorder';
 
-export default class Main extends Component {
+class Main extends React.Component {
   constructor(props) {
     super(props);
 
@@ -59,3 +59,5 @@ export default class Main extends Component {
     );
   }
 }
+
+export default Main;

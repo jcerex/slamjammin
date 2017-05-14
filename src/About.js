@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
-class About extends Component {
+class About extends React.Component {
   render() {
     return (
       <div className="about-container text-center">

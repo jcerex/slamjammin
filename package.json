@@ -33,6 +33,7 @@
     "http-proxy-middleware": "0.17.2",
     "jest": "16.0.2",
     "json-loader": "0.5.4",
+    "morgan": "^1.8.1",
     "object-assign": "4.1.0",
     "path-exists": "2.1.0",
     "postcss-loader": "1.0.0",
@@ -57,9 +58,10 @@
     "uuid": "^2.0.3"
   },
   "scripts": {
-    "start": "./server.js",
+    "start": "node ./server/index.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "watch": "nodemon ./server/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
