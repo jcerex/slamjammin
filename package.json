@@ -61,7 +61,8 @@
     "start": "node ./server/index.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "watch": "nodemon ./server/index.js"
+    "watch": "nodemon ./server/index.js",
+    "deploy": "npm run build && heroku push origin master"
   },
   "eslintConfig": {
     "extends": "react-app"
