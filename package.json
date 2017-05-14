@@ -1,7 +1,7 @@
 {
   "name": "slamJammin",
-  "version": "0.2.0",
-  "private": true,
+  "version": "1.0.0",
+  "author": "Jamie Cerexhe",
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "babel-core": "6.17.0",
@@ -33,7 +33,6 @@
     "http-proxy-middleware": "0.17.2",
     "jest": "16.0.2",
     "json-loader": "0.5.4",
-    "morgan": "^1.8.1",
     "object-assign": "4.1.0",
     "path-exists": "2.1.0",
     "postcss-loader": "1.0.0",
@@ -52,6 +51,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "firebase": "^3.6.0",
+    "morgan": "^1.8.1",
     "path": "^0.12.7",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
@@ -83,6 +83,9 @@
       "<rootDir>/(build|docs|node_modules)/"
     ],
     "testEnvironment": "node"
+  },
+  "engines": {
+    "node": "7.4.0"
   },
   "babel": {
     "presets": [

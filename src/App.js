@@ -1,8 +1,6 @@
 const React = require('react');
 import './App.css';
-// const Main = require('./Main').default;
 import Main from './Main';
-// const About = require('./About').default;
 import About from './About';
 
 class App extends React.Component {
